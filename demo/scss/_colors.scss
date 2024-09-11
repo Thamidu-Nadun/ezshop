@@ -1,0 +1,19 @@
+// Primary Colors
+$midnight-blue: #2C3E50;  // Strong and elegant for headers, titles, and backgrounds.
+$silver: #BDC3C7;         // Neutral color for backgrounds or sections, giving a clean look.
+$bright-cyan: #00B8D4;    // Vibrant accent color for buttons and highlights.
+
+// Secondary Colors
+$jet-black: #2A2D34;      // For footers or content dividers, providing contrast without overpowering.
+$slate-grey: #7F8C8D;     // Soft grey for less prominent text or form fields.
+
+// Gradients
+$gradient-hero: linear-gradient(to right, $midnight-blue, $bright-cyan); 
+// Hero section gradient, smoothly transitioning between professionalism and vibrance.
+
+$gradient-button: linear-gradient(to bottom, $silver, $bright-cyan);  
+// Button gradient that adds depth with a 3D look.
+
+// Icon Background and Badge
+$icon-bg: $jet-black;  // Minimalistic and clean for icon backgrounds.
+$highlight-badge: $bright-cyan;  // Makes notifications or icons stand out.
