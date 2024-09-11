@@ -1,0 +1,197 @@
+@import "colors";
+// Colors
+$primary-color-1: #ffb200;
+$primary-color-2: #eb5b00;
+$primary-color-3: #e4003a;
+$primary-color-4: #b60071;
+$secondary-color-1: #99b122;
+$secondary-color-2: #3a9f55;
+$secondary-color-3: #008574;
+$secondary-color-4: #006775;
+$secondary-color-5: #2f4858;
+// Basic Colors
+$white: #fefae0;
+$black: #003049;
+$bg-color: $silver;
+
+$primary: $midnight-blue;
+$secondary: $secondary-color-5;
+$success: $secondary-color-2;
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+$custom-theme: (
+  "orange": $primary-color-2,
+  "red": $primary-color-3,
+  "pink": $primary-color-4,
+  "highlight": $bright-cyan,
+  "bg-color": $bg-color,
+  "form-color": $slate-grey,
+  "footer-bg": $jet-black,
+);
+$theme-colors: map-merge($custom-theme, $theme-colors);
+
+
+/* -----------------------------------
+----------- Nav Section --------------
+-------------------------------------- */
+
+
+nav {
+  background-color: $midnight-blue;
+  color: $silver;
+  a:hover{
+    color: $white;
+    font-style: bold;
+  }
+}
+
+
+/* -----------------------------------
+---------- Hero Section --------------
+-------------------------------------- */
+
+
+.hero-highlight {
+  background: linear-gradient(to right, $midnight-blue, $bright-cyan);
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+/* -----------------------------------
+--------- About Section --------------
+-------------------------------------- */
+
+
+
+/* Cover */
+.about-cover {
+  background-image: $gradient-hero;
+}
+/* Icon */
+.icon {
+  position: absolute;
+  background: $icon-bg;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.7em 1em;
+  border-radius: 50%;
+  top: -1.5em;
+  left: 50%;
+  translate: -50% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    font-size: 2em;
+    color: $highlight-badge;
+  }
+}
+/* Mobile */
+@media screen and (width<768px) {
+  .about {
+    margin: 0 1em !important;
+  }
+  // .about-cover {
+  //   background: transparent;
+  // }
+}
+
+
+.app-highlight {
+  background: linear-gradient(to right, $midnight-blue, $bright-cyan);
+  background-clip: text;
+  color: transparent;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@media screen and (width>576px) {
+  .w-sm-0 {
+    width: 0% !important;
+  }
+  .w-sm-25 {
+    width: 25% !important;
+  }
+  .w-sm-50 {
+    width: 50% !important;
+  }
+  .w-sm-75 {
+    width: 75% !important;
+  }
+  .w-sm-100 {
+    width: 100% !important;
+  }
+}
+@media screen and (width>768px) {
+  .w-md-0 {
+    width: 0% !important;
+  }
+  .w-md-25 {
+    width: 25% !important;
+  }
+  .w-md-50 {
+    width: 50% !important;
+  }
+  .w-md-75 {
+    width: 75% !important;
+  }
+  .w-md-100 {
+    width: 100% !important;
+  }
+}
+@media screen and (width>992px) {
+  .w-lg-0 {
+    width: 0% !important;
+  }
+  .w-lg-25 {
+    width: 25% !important;
+  }
+  .w-lg-50 {
+    width: 50% !important;
+  }
+  .w-lg-75 {
+    width: 75% !important;
+  }
+  .w-lg-100 {
+    width: 100% !important;
+  }
+}
+@media screen and (width>1200px) {
+  .w-xl-0 {
+    width: 0% !important;
+  }
+  .w-xl-25 {
+    width: 25% !important;
+  }
+  .w-xl-50 {
+    width: 50% !important;
+  }
+  .w-xl-75 {
+    width: 75% !important;
+  }
+  .w-xl-100 {
+    width: 100% !important;
+  }
+}
+@media screen and (width>1400px) {
+  .w-xxl-0 {
+    width: 0% !important;
+  }
+  .w-xxl-25 {
+    width: 25% !important;
+  }
+  .w-xxl-50 {
+    width: 50% !important;
+  }
+  .w-xxl-75 {
+    width: 75% !important;
+  }
+  .w-xxl-100 {
+    width: 100% !important;
+  }
+}
