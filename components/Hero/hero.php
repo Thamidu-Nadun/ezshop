@@ -11,10 +11,10 @@
                 </p>
                 <form class="hero-form mt-lg-5 mt-3 input-group w-lg-50 mx-auto">
                     <select name="year" class="year bg-form-color text-light form-control">
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
+                        <option value="car">Car</option>
+                        <option value="car">Jeep</option>
+                        <option value="car">3-Wheel</option>
+                        <option value="car">Motor Bike</option>
                     </select>
                     <select name="brand" class="brand bg-form-color text-light form-control">
                         <option value="2021">2021</option>
