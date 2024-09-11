@@ -1,5 +1,5 @@
 <!-- Product Section -->
-<section class="product w-100" style="padding-top: 25vh; margin-bottom: 20vh">
+<section class="product w-100" style="padding-top: 25vh; margin-bottom: 20vh" id="products">
     <div class="container">
         <h2 class="text-center text-capitalize mb-5 sec-title">
             trending vehicle

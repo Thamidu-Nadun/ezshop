@@ -1,5 +1,5 @@
 <!-- About Section -->
-<section class="about w-100">
+<section class="about w-100" id="about">
     <div class="container">
         <h2 class="text-center text-capitalize mb-5 pt-lg-5 text-primary">
             why us

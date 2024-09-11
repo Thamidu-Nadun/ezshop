@@ -20,13 +20,13 @@
                         <a href="#" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-capitalize">why us</a>
+                        <a href="#about" class="nav-link text-capitalize">why us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-capitalize">find a vehicle</a>
+                        <a href="#products" class="nav-link text-capitalize">find a vehicle</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-capitalize">sell a vehicle</a>
+                        <a href="#appSection" class="nav-link text-capitalize">sell a vehicle</a>
                     </li>
                 </ul>
                 <div class="d-grid d-md-block mt-5 mt-md-0">

@@ -1,5 +1,5 @@
 <!-- Download App Section -->
-<section class="app w-100 sec-p">
+<section class="app w-100 sec-p" id="appSection">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6">
