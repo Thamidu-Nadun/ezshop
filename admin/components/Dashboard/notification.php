@@ -3,7 +3,7 @@
         <div class="wc-title">
             <h4>Notifications</h4>
         </div>
-        <div class="widget-inner">
+        <div class="widget-inner bg-footer-bg">
             <div class="noti-box-list">
                 <ul>
                     <li>

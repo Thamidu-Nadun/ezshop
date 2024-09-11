@@ -1,6 +1,6 @@
 <!-- Your Profile Views Chart -->
-<div class="col-lg-8 m-b30">
-    <div class="widget-box">
+<div class="col-lg-12 m-b30 mx-auto">
+    <div class="widget-box bg-footer-bg rounded-5">
         <div class="wc-title">
             <h4>Your Profile Views</h4>
         </div>
