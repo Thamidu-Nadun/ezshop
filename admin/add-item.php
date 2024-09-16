@@ -52,6 +52,7 @@
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/dashboard.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<style>
 		nav {
 			a:hover {
