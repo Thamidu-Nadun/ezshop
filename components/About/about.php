@@ -8,42 +8,33 @@
             <div class="card mb-5 mb-lg-0 rounded-4 text-bg-bg-color w-100 w-sm-75 w-lg-25 mx-auto">
                 <div class="icon mb-5"><i class="fa-solid fa-car"></i></div>
                 <div class="card-header text-center text-capitalize mt-5 pt-3">
-                    Header
+                    <?php echo $about_1; ?>
                 </div>
                 <div class="card-body text-center">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Assumenda, sit! Beatae placeat sed officiis modi est et sit
-                        recusandae perferendis maxime labore totam harum, porro in
-                        perspiciatis iusto temporibus repudiandae?
+                        <?php echo $about_1_description; ?>
                     </p>
                 </div>
             </div>
             <div class="card mb-5 mb-lg-0 rounded-4 text-bg-bg-color w-100 w-sm-75 w-lg-25 mx-auto">
                 <div class="icon mb-5"><i class="fa-solid fa-car"></i></div>
                 <div class="card-header text-center text-capitalize mt-5 pt-3">
-                    Header
+                    <?php echo $about_1; ?>
                 </div>
                 <div class="card-body text-center">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Assumenda, sit! Beatae placeat sed officiis modi est et sit
-                        recusandae perferendis maxime labore totam harum, porro in
-                        perspiciatis iusto temporibus repudiandae?
+                        <?php echo $about_1_description; ?>
                     </p>
                 </div>
             </div>
             <div class="card mb-5 mb-lg-0 rounded-4 text-bg-bg-color w-100 w-sm-75 w-lg-25 mx-auto">
                 <div class="icon mb-5"><i class="fa-solid fa-car"></i></div>
                 <div class="card-header text-center text-capitalize mt-5 pt-3">
-                    Header
+                    <?php echo $about_1; ?>
                 </div>
                 <div class="card-body text-center">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Assumenda, sit! Beatae placeat sed officiis modi est et sit
-                        recusandae perferendis maxime labore totam harum, porro in
-                        perspiciatis iusto temporibus repudiandae?
+                        <?php echo $about_1_description; ?>
                     </p>
                 </div>
             </div>

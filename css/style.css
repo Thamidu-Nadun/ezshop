@@ -111,6 +111,12 @@ body {
       }
     }
     @media screen and (width < 768px) {
+      .hero-title{
+        font-size: 3rem;
+      }
+      .hero-para{
+        font-size: 1em;
+      }
       .hero-form {
         font-family: var(--font-main-bold), serif;
       }

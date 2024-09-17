@@ -1,3 +1,36 @@
+<?php
+include('admin_2/inc/config.php');
+$id = 1;
+$statement = $pdo->prepare("SELECT * FROM tbl_settings WHERE id=:id");
+$statement->bindParam(':id', $id);
+$statement->execute();
+$result = $statement->fetchAll();
+foreach ($result as $row){
+    $name = $row['name'];
+    $description = $row['description'];
+    $hero_title = $row['hero_title'];
+    $hero_paragraph = $row['hero_paragraph'];
+    $about_1 = $row['about_1'];
+    $about_1_description = $row['about_1_description'];
+    $about_2 = $row['about_2'];
+    $about_2_description = $row['about_2_description'];
+    $about_3 = $row['about_3'];
+    $about_3_description = $row['about_3_description'];
+    $contact_link = $row['contact_link'];
+    $findUs_link = $row['findUs_link'];
+    $address = $row['address'];
+    $mail = $row['mail'];
+    $number = $row['number'];
+    $whatsapp = $row['whatsapp'];
+    $facebook = $row['facebook'];
+    $x = $row['x'];
+    $google = $row['google'];
+    $instagram = $row['instagram'];
+    $linkedin = $row['linkedin'];
+    $github = $row['github'];
+    $copyright = $row['copyright'];
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 

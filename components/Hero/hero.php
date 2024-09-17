@@ -3,11 +3,11 @@
         <div class="row text-center">
             <div class="col mt-lg-5 mt-5">
                 <h2 class="hero-title text-primary">
-                    Find, Buy and Sell a car
+                    <?php echo $hero_title; ?>
                     <span class="hero-highlight">Easily</span>
                 </h2>
                 <p class="hero-para mt-lg-4 mt-2">
-                    Buy a car what you want, Drive where you want.
+                    <?php echo $hero_paragraph; ?>
                 </p>
                 <form class="hero-form mt-lg-5 mt-3 input-group w-lg-50 mx-auto">
                     <select name="year" class="year bg-form-color text-light form-control">
