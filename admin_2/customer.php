@@ -17,7 +17,7 @@
 								<th width="10">#</th>
 								<th width="180">Name</th>
 								<th width="150">Email Address</th>
-								<th width="180">Country, City, State</th>
+								<th width="180">District</th>
 								<th>Status</th>
 								<th width="100">Change Status</th>
 								<th width="100">Action</th>
@@ -28,8 +28,8 @@
 							$i=0;
 							$statement = $pdo->prepare("SELECT * 
 														FROM tbl_customer t1
-														JOIN tbl_country t2
-														ON t1.cust_country = t2.country_id
+														JOIN tbl_district t2
+														ON t1.cust_district = t2.id
 													");
 							$statement->execute();
 							$result = $statement->fetchAll(PDO::FETCH_ASSOC);						
@@ -41,9 +41,7 @@
 									<td><?php echo $row['cust_name']; ?></td>
 									<td><?php echo $row['cust_email']; ?></td>
 									<td>
-										<?php echo $row['country_name']; ?><br>
-										<?php echo $row['cust_city']; ?><br>
-										<?php echo $row['cust_state']; ?>
+										<?php echo $row['name']; ?>
 									</td>
 									<td><?php if($row['cust_status']==1) {echo 'Active';} else {echo 'Inactive';} ?></td>
 									<td>

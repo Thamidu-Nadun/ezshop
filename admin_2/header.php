@@ -22,10 +22,10 @@ $statement->execute();
 $result = $statement->fetchAll(PDO::FETCH_ASSOC);
 foreach ($result as $row) {
 	$favicon = $row['favicon'];
-	$meta_keyword_home = $row['meta_keyword_home'];
-	$meta_description_home = $row['meta_description_home'];
-	$meta_openGraph_image = $row['meta_opengraph_image'];
-	$meta_openGraph_description = $row['meta_description_home'];
+	$meta_keyword_home = $row['meta_keyword'];
+	$meta_description = $row['meta_description'];
+	$meta_openGraph_image = $row['meta_opengraph_img'];
+	$meta_openGraph_description = $row['meta_description'];
 }
 ?>
 
@@ -61,7 +61,7 @@ foreach ($result as $row) {
 	<!--Meta Tags-->
 
 	<meta name="keywords" content="<?php echo $meta_keyword_home; ?>">
-	<meta name="description" content="<?php echo $meta_description_home; ?>">
+	<meta name="description" content="<?php echo $meta_description; ?>">
 	<meta property="og:image" content="<?php echo $meta_openGraph_image; ?>">
 	<meta property="og:description" content="<?php echo $meta_openGraph_description; ?>">
 
