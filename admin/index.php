@@ -1,100 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php require_once('header.php'); ?>
 
-<!-- Mirrored from educhamp.themetrades.com/demo/admin/courses.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Feb 2019 13:10:19 GMT -->
+<section class="content-header">
+	<h1>Dashboard</h1>
+</section>
 
-<head>
+<?php
+$statement = $pdo->prepare("SELECT * FROM tbl_top_category");
+$statement->execute();
+$total_top_category = $statement->rowCount();
 
-	<!-- META ============================================= -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
-	<meta name="robots" content="" />
+$statement = $pdo->prepare("SELECT * FROM tbl_mid_category");
+$statement->execute();
+$total_mid_category = $statement->rowCount();
 
-	<!-- DESCRIPTION -->
-	<meta name="description" content="EduChamp : Education HTML Template" />
+$statement = $pdo->prepare("SELECT * FROM tbl_end_category");
+$statement->execute();
+$total_end_category = $statement->rowCount();
 
-	<!-- OG -->
-	<meta property="og:title" content="EduChamp : Education HTML Template" />
-	<meta property="og:description" content="EduChamp : Education HTML Template" />
-	<meta property="og:image" content="" />
-	<meta name="format-detection" content="telephone=no">
+$statement = $pdo->prepare("SELECT * FROM tbl_product");
+$statement->execute();
+$total_product = $statement->rowCount();
 
-	<!-- FAVICONS ICON ============================================= -->
-	<link rel="icon" href="../error-404.html" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+$statement = $pdo->prepare("SELECT * FROM tbl_customer WHERE cust_status='1'");
+$statement->execute();
+$total_customers = $statement->rowCount();
 
-	<!-- PAGE TITLE HERE ============================================= -->
-	<title>EduChamp : Education HTML Template </title>
+$statement = $pdo->prepare("SELECT * FROM tbl_subscriber WHERE subs_active='1'");
+$statement->execute();
+$total_subscriber = $statement->rowCount();
 
-	<!-- MOBILE SPECIFIC ============================================= -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+?>
+<style>
+	.small-box {
+		border-radius: 10px;
+		box-shadow: 1px 1px 5px 0px #000;
+	}
+</style>
+<section class="content">
+	<div class="row">
+		<div class="col-lg-3 col-xs-6">
+			<!-- small box -->
+			<div class="small-box bg-primary">
+				<div class="inner">
+					<h3><?php echo $total_product; ?></h3>
 
-	<!--[if lt IE 9]>
-	<script src="assets/js/html5shiv.min.js"></script>
-	<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
+					<p>Products</p>
+				</div>
+				<div class="icon">
+					<i class="ionicons ion-android-cart"></i>
+				</div>
 
-	<!-- All PLUGINS CSS ============================================= -->
-	<link rel="stylesheet" type="text/css" href="assets/css/assets.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendors/calendar/fullcalendar.css">
+			</div>
+		</div>
 
-	<!-- TYPOGRAPHY ============================================= -->
-	<link rel="stylesheet" type="text/css" href="assets/css/typography.css">
+		<!-- ./col -->
 
-	<!-- SHORTCODES ============================================= -->
-	<link rel="stylesheet" type="text/css" href="assets/css/shortcodes/shortcodes.css">
+		<div class="col-lg-3 col-xs-6">
+			<!-- small box -->
+			<div class="small-box bg-red">
+				<div class="inner">
+					<h3><?php echo $total_customers; ?></h3>
 
-	<!-- STYLESHEETS ============================================= -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" href="/css/stylemin.css">
-	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/dashboard.css">
-	<link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css">
-	<style>
-		nav {
-			a:hover {
-				color: #000;
-				font-style: bold;
-			}
-		}
-	</style>
-</head>
+					<p>Active Customers</p>
+				</div>
+				<div class="icon">
+					<i class="ionicons ion-person-stalker"></i>
+				</div>
 
-<body class="ttr-opened-sidebar ttr-pinned-sidebar bg-bg-color">
+			</div>
+		</div>
 
-	<!-- header start -->
-	<?php include('components/Navbar/nav.php'); ?>
-	<!-- header end -->
-	<!-- Left sidebar menu start -->
-	<?php include('components/Navbar/sidebar.php'); ?>
-	<!-- Left sidebar menu end -->
-	<!--Main container start -->
-	<?php include('components/Dashboard/main.php'); ?>
+		<div class="col-lg-3 col-xs-6">
+			<!-- small box -->
+			<div class="small-box bg-yellow">
+				<div class="inner">
+					<h3><?php echo $total_subscriber; ?></h3>
 
-	<div class="ttr-overlay"></div>
+					<p>Subscriber</p>
+				</div>
+				<div class="icon">
+					<i class="ionicons ion-person-add"></i>
+				</div>
 
-	<!-- External JavaScripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
-	<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
-	<script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
-	<script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
-	<script src="assets/vendors/counter/waypoints-min.js"></script>
-	<script src="assets/vendors/counter/counterup.min.js"></script>
-	<script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
-	<script src="assets/vendors/masonry/masonry.js"></script>
-	<script src="assets/vendors/masonry/filter.js"></script>
-	<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
-	<script src='assets/vendors/scroll/scrollbar.min.js'></script>
-	<script src="assets/js/functions.js"></script>
-	<script src="assets/vendors/chart/chart.min.js"></script>
-	<script src="assets/js/admin.js"></script>
-	<script src='assets/vendors/switcher/switcher.js'></script>
-</body>
+			</div>
+		</div>
 
-<!-- Mirrored from educhamp.themetrades.com/demo/admin/courses.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Feb 2019 13:11:35 GMT -->
 
-</html>
+		<div class="col-lg-3 col-xs-6">
+			<!-- small box -->
+			<div class="small-box bg-olive">
+				<div class="inner">
+					<h3><?php echo $total_top_category; ?></h3>
+
+					<p>Top Categories</p>
+				</div>
+				<div class="icon">
+					<i class="ionicons ion-arrow-up-b"></i>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="col-lg-3 col-xs-6">
+			<!-- small box -->
+			<div class="small-box bg-blue">
+				<div class="inner">
+					<h3><?php echo $total_mid_category; ?></h3>
+
+					<p>Mid Categories</p>
+				</div>
+				<div class="icon">
+					<i class="ionicons ion-android-menu"></i>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="col-lg-3 col-xs-6">
+			<!-- small box -->
+			<div class="small-box bg-maroon">
+				<div class="inner">
+					<h3><?php echo $total_end_category; ?></h3>
+
+					<p>End Categories</p>
+				</div>
+				<div class="icon">
+					<i class="ionicons ion-arrow-down-b"></i>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+</section>
+
+<?php require_once('footer.php'); ?>

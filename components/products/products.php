@@ -29,7 +29,7 @@
                             </a>
                         </div>
                         <div class="card-body">
-                            <a href="" class="text-reset text-decoration-none">
+                            <a href="pages/product-details.php?p_id=1" class="text-reset text-decoration-none">
                                 <h5 class="card-title mb-3 p-card-title">Product name</h5>
                             </a>
                             <p>Lorem ipsum dolor sit amet.</p>

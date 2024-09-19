@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top px-2">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">NavBar</a>
+        <a class="navbar-brand" href="#">A-C</a>
         <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

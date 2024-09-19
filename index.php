@@ -1,5 +1,5 @@
 <?php
-include('admin_2/inc/config.php');
+include('admin/inc/config.php');
 $id = 1;
 $statement = $pdo->prepare("SELECT * FROM tbl_settings WHERE id=:id");
 $statement->bindParam(':id', $id);

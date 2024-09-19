@@ -9,7 +9,7 @@ date_default_timezone_set('America/Los_Angeles');
 $dbhost = 'localhost';
 
 // Database Name
-$dbname = 'car_sale';
+$dbname = 'carSale';
 
 // Database Username
 $dbuser = 'root';
